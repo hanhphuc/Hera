@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anhthunguyen.map_count" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="4P01vXCp9njRC0Rni8sZTvNenpUfUONfsT7q4ydI" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="92eKehihZ5zpcFTEm0PthGPmq6cO0c2y5gDxZNr1" />
+        <activity
+            android:name=".LoadingSreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Hera"
+            android:parentActivityName=".Login" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="Hera" >
+        </activity>
+        <activity
+            android:name=".profile"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".SignUp" >
+        </activity>
+        <activity
+            android:name=".BMI_activity"
+            android:label="BMI"
+            android:parentActivityName=".profile" >
+        </activity>
+        <activity
+            android:name=".profile_ifo"
+            android:label="@string/title_activity_profile_ifo"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".food_activity"
+            android:label="@string/title_activity_food_activity"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".setting_Activity"
+            android:label="@string/title_activity_setting_"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".newsActivity"
+            android:label="@string/title_activity_news"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="Hera"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".AlarmActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".preferences.AlarmPreferencesActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".AlarmActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+
+            <!-- Parent activity meta-data to support API level 7+ .AlarmPreferencesActivity -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlarmActivity" />
+        </activity>
+
+        <service
+            android:name=".service.AlarmService"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Hera"
+            android:process=".serviceProcess" >
+        </service>
+
+        <receiver android:name=".service.AlarmServiceBroadcastReciever" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".alert.AlarmAlertActivity"
+            android:label="Hera"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name=".alert.AlarmAlertBroadcastReciever" >
+        </receiver>
+        <receiver android:name=".telephony.PhoneStateChangedBroadcastReciever" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".RunActivity"
+            android:label="@string/title_activity_run"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:parentActivityName=".food_activity"
+            android:name=".dialog_sang">
+            android:label="Breakfast"
+        </activity>
+        <activity
+            android:name=".dialog_trua"
+            android:parentActivityName=".food_activity"
+            android:label="Have Lunch">
+        </activity>
+        <activity
+            android:name=".dialog_toi"
+            android:parentActivityName=".food_activity"
+            android:label="Have Dinner">
+        </activity>
+        <activity
+            android:name=".dialog_sangnhe"
+            android:parentActivityName=".food_activity"
+            android:label="Morning Light Meal">
+        </activity>
+        <activity
+            android:name=".dialog_truanhe"
+            android:parentActivityName=".food_activity"
+            android:label="Lunch Light Meal">
+        </activity>
+        <activity
+            android:name=".dialog_toinhe"
+            android:parentActivityName=".food_activity"
+            android:label="Dinner Light Meal">
+        </activity>
+    </application>
+
+</manifest>

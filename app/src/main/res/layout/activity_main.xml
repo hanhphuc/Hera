@@ -1,0 +1,149 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginEnd="16dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:paddingBottom="15dp"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal">
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/person"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imvprofile"
+        android:onClick="profile"
+        />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imvfood"
+        android:onClick="food"
+        />
+    <!-- kjfkj-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="#ff6347"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:id="@+id/txtName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        android:textColor="#ff6347"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:id="@+id/txtFood"/>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/run"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imvrun"
+        android:onClick="run"
+        />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/newss"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imvnewss"
+        android:onClick="news"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run"
+        android:textColor="#ff6347"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:id="@+id/txtRun" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News"
+        android:textColor="#ff6347"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:id="@+id/txtNews" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/aws"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imvproduct"
+        android:onClick="product"
+        />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/tick"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imvtick"
+        android:onClick="check"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product"
+        android:textColor="#ff6347"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:id="@+id/txtProduct" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        android:textColor="#ff6347"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:id="@+id/txtCheck" />
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/setting"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imvsetting"
+        android:onClick="setting"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#ff6347"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:textColor="#ff6347"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:id="@+id/txtSetting" />
+
+</GridLayout>
+
+
+
+</ScrollView>
+

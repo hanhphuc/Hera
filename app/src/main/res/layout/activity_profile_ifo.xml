@@ -1,0 +1,187 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="30px"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#d89c1a"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Name:" />
+        <TextView
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/ten"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20px"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lgt">
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#d89c1a"
+            android:layout_weight="1"
+            android:text="Gender: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:id="@+id/gioitinh"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20px"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#d89c1a"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age:     " />
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:id="@+id/tuoi"/>
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#d89c1a"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     "/>
+    </LinearLayout>
+    <LinearLayout
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#d89c1a"
+        android:layout_marginLeft="20px"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#d89c1a"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height : "/>
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chieucao"/>
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#d89c1a"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  cm "/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20px"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#d89c1a"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight : "/>
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cannang"/>
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#d89c1a"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  kg"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20px"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#d89c1a"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calo/day: "/>
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calo"/>
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#d89c1a"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  calo"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

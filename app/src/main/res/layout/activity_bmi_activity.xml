@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:weightSum="4"
+    tools:context="com.example.my.form_2.BMI_activity">
+
+    <TextView
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="40px"
+        android:text="Your BMI index : "
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#d89c1a"/>
+    <EditText
+        android:textColor="#d89c1a"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/bmi"/>
+    <TextView
+
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:textColor="#d89c1a"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/noidung"/>
+    <TextView
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textColor="#2196F3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Water accounts for about 70% the mass of the human body and is an important component of the process of metabolism, a solvent to dissolve many substances in the body. People should drink 2.0 liters per day (or about 8 cups of water) for good health"/>
+    <Button
+        android:background="#f30317"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/buttonNext"
+        android:onClick="btnNext"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

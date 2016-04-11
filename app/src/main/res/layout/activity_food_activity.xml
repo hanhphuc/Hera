@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.anhthunguyen.map_count.food_activity"
+    android:weightSum="4">
+
+    <Button
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00BFA5"
+        android:text="Select days" />
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Calo/day"
+        android:layout_weight="0.25"/>
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBar1"
+        android:layout_below="@+id/progressBar1"/>
+    <!-- Linear lớn-->
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_weight="1">
+        <!-- Linear từng hàng -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/oval"
+                android:src="@drawable/bread"
+                android:layout_gravity="center"
+                android:id="@+id/sang"
+                android:onClick="onDialog"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Breakfast"
+                android:gravity="center"
+                android:id="@+id/Breakfast" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/oval"
+                android:src="@drawable/dinner"
+                android:layout_gravity="center"
+                android:id="@+id/trua"
+                android:onClick="onDialog"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/Lunch"
+                android:text="Lunch" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/oval"
+                android:src="@drawable/lunch"
+                android:layout_gravity="center"
+                android:id="@+id/toi"
+                android:onClick="onDialog"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Dinner"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/Dinner" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- hang thư 2 -->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <!-- Linear từng hàng -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/oval"
+                android:src="@drawable/meal"
+                android:layout_gravity="center"
+                android:id="@+id/sangnhe"
+                android:onClick="onDialog"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Morning light meal"
+                android:gravity="center"
+                android:id="@+id/Breakfast2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/oval"
+                android:src="@drawable/meal"
+                android:layout_gravity="center"
+                android:id="@+id/truanhe"
+                android:onClick="onDialog"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Lunch light meal"
+                android:gravity="center"
+                android:id="@+id/Lunch2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/oval"
+                android:src="@drawable/meal"
+                android:layout_gravity="center"
+                android:id="@+id/toinhe"
+                android:onClick="onDialog"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Dinner light meal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/Dinner2" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
